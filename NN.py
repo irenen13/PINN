@@ -1,4 +1,4 @@
-# === Neural Network Definition ===
+# === Neural Nets ===
 def build_network(num_hidden=100):
     class Net(nn.Module):
         def __init__(self):
