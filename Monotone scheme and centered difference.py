@@ -88,7 +88,7 @@ def train_model_cube(model, d=3, h=0.1, lam=1.0, T=2000, batch_size=1000, lr=0.0
         boundary_x_list = []
         
        
-        for j in range(d):         # j = 0, 1, 2 referes to (x, y, z)
+        for j in range(d):         # j = 0, 1, 2 refers to (x, y, z)
             for side in [-1.0, 1.0]:
                 x_face = 2 * torch.rand(boundary_points_per_face, d) - 1
                 x_face[:, j] = side  # Fix the j-th coordinate to ±1
